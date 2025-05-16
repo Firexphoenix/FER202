@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import NamePerson from './NamePerson';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import PeopleList from './PeopleList';
+import FirstTeenager from './FirstTeenager';
+import AreAllTeenagers from './AreAllTeenagers';
+import Sort from './Sort';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
+    <NamePerson />
+    <PeopleList/>
+    <FirstTeenager/>
+    <AreAllTeenagers/>
+    <Sort/>
   </React.StrictMode>
 );
 
