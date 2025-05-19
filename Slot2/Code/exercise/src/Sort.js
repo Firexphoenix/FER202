@@ -7,7 +7,6 @@ function Sort() {
     { name: "Frank", age: 25, occupation: "teacher" },
   ];
 
-  // Sắp xếp danh sách theo occupation và age (Exercise 8)
   const sortedPeople = [...people].sort((a, b) => {
     if (a.occupation === b.occupation) {
       return a.age - b.age;
@@ -15,20 +14,17 @@ function Sort() {
     return a.occupation.localeCompare(b.occupation);
   });
 
-  // Nhóm theo occupation (Exercise 9)
   const groupByOccupation = people.reduce((groups, person) => {
-    if (!groups[person.occupation]) {
+    if (!groups[person.occupation]) { 
       groups[person.occupation] = [];
     }
     groups[person.occupation].push(person);
     return groups;
   }, {});
 
-  // Tìm người già nhất và trẻ nhất (Exercise 9)
   const oldest = people.reduce((max, person) => (person.age > max.age ? person : max), people[0]);
   const youngest = people.reduce((min, person) => (person.age < min.age ? person : min), people[0]);
 
-  // Tính tuổi trung bình theo occupation (Exercise 10)
   const averageAges = Object.entries(groupByOccupation).reduce((averages, [occupation, group]) => {
     const totalAge = group.reduce((sum, person) => sum + person.age, 0);
     averages[occupation] = (totalAge / group.length).toFixed(1);
