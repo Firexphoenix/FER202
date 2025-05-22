@@ -13,6 +13,11 @@ const Exercise10 = () => {
   const filteredEmployees = employees.filter(emp =>
     emp.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  // const filteredEmployees = employees.filter(employee => 
+  //   Object.values(employee).some(value => 
+  //     String(value).toLowerCase().includes(searchTerm.toLowerCase())
+  //   )
+  // );
 
   return (
     <div>
@@ -26,11 +31,12 @@ const Exercise10 = () => {
 
       <ul>
         {filteredEmployees.map((emp, id) => (
-        <li key={emp.id }>
+        <li key={id}>
             {emp.name} - {emp.department} - {emp.age}
           </li>
         ))}
       </ul>
+      
     </div>
   );
 };

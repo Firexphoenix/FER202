@@ -8,17 +8,17 @@ const employees = [
 
 function Exercise7() {
     const sortedEmployees = [...employees].sort((a, b) => {
-        const deptCompare = (a.department || "").localeCompare(b.department || "");
+        const deptCompare = (a.department).localeCompare(b.department);
         if (deptCompare !== 0) return deptCompare;
-        return (a.name || "").localeCompare(b.name || "");
+        return (a.name).localeCompare(b.name);
     });
 
     return (
         <div>
             <ul>
                 {sortedEmployees.map((employee, index) => (
-                    <li key={employee.id || index}>
-                        {employee.name || "Unknown"} - {employee.department || "No Department"}
+                    <li key={index}>
+                        {employee.name} - {employee.department}
                     </li>
                 ))}
             </ul>

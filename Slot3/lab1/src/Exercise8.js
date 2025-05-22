@@ -7,7 +7,7 @@ const employees = [
 ];
 function Exercise8() {
     const groupedEmployees = employees.reduce((groups, employee) => {
-        const department = employee.department || "No Department";
+        const department = employee.department;
         if (!groups[department]) groups[department] = [];
         groups[department].push(employee);
         return groups;
@@ -20,8 +20,8 @@ function Exercise8() {
                     <h3>{department}</h3>
                     <ul>
                         {groupedEmployees[department].map((employee, index) => (
-                            <li key={employee.id || index}>
-                                {employee.name || "Unknown"} (Age: {employee.age || "N/A"})
+                            <li key={index}>
+                                {employee.name} (Age: {employee.age})
                             </li>
                         ))}
                     </ul>

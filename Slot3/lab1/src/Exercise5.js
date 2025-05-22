@@ -11,8 +11,8 @@ function Exercise5() {
         <div>
             <select>
                 {employees.map((employee, index) => (
-                    <option key={index} value={employee.name}>
-                        {employee.name || "Unknown"}
+                    <option key={index+1} value={employee.name}>
+                        {employee.name}
                     </option>
                 ))}
             </select>
