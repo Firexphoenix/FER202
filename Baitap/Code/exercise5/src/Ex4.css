@@ -1,0 +1,22 @@
+/* Header & Navbar */
+.bg-orange {
+    background-color: #e67e22;
+    /* Cam đậm FPT */
+}
+
+.bg-footer {
+    background-color: #f6cba3;
+    color: white;
+    /* Cam nhạt/footer */
+}
+
+.text-header {
+    color: #d35400;
+}
+
+.logo {
+    width: 20%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
