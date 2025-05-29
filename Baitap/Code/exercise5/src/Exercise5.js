@@ -34,45 +34,48 @@ const StudentCard = ({ student, onStatusChange }) => {
     };
 
     return (
-        <div className="col-md-3 mb-4">
+        <div className="col-md-6 mb-4">
             <div className="card shadow-sm">
                 <img
                     src={student.img}
                     className="card-img-top img-fluid object-fit-cover"
                     alt={student.name}
-                    style={{ height: '300px' }}
+                    style={{ height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                 />
                 <div className="card-body">
-                    <h5 className="card-title text-center">{student.name}</h5>
-                    <p className="card-text text-center">
-                        {student.id} <br /> {student.location}
-                    </p>
+                    <h5 className="card-title text-center">{student.id}</h5>
+                    <div className="d-flex justify-content-between px-2">
+                        <span>{student.name}</span>
+                        <span>{student.location}</span>
+                    </div>
                     <form onSubmit={handleSubmit}>
-                        <div className="form-check">
-                            <input
-                                className="form-check-input"
-                                type="radio"
-                                name={`attendance-${student.id}`}
-                                id={`absent-${student.id}`}
-                                checked={student.status === 'Absent'}
-                                onChange={() => onStatusChange(student.id, 'Absent')}
-                            />
-                            <label className="form-check-label" htmlFor={`absent-${student.id}`}>
-                                Absent
-                            </label>
-                        </div>
-                        <div className="form-check">
-                            <input
-                                className="form-check-input"
-                                type="radio"
-                                name={`attendance-${student.id}`}
-                                id={`present-${student.id}`}
-                                checked={student.status === 'Present'}
-                                onChange={() => onStatusChange(student.id, 'Present')}
-                            />
-                            <label className="form-check-label" htmlFor={`present-${student.id}`}>
-                                Present
-                            </label>
+                        <div className="d-flex justify-content-between mb-2">
+                            <div className="form-check me-3">
+                                <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    name={`attendance-${student.id}`}
+                                    id={`absent-${student.id}`}
+                                    checked={student.status === 'Absent'}
+                                    onChange={() => onStatusChange(student.id, 'Absent')}
+                                />
+                                <label className="form-check-label" htmlFor={`absent-${student.id}`}>
+                                    Absent
+                                </label>
+                            </div>
+                            <div className="form-check">
+                                <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    name={`attendance-${student.id}`}
+                                    id={`present-${student.id}`}
+                                    checked={student.status === 'Present'}
+                                    onChange={() => onStatusChange(student.id, 'Present')}
+                                />
+                                <label className="form-check-label" htmlFor={`present-${student.id}`}>
+                                    Present
+                                </label>
+                            </div>
                         </div>
                         <button type="submit" className="btn btn-warning btn-sm mt-2 w-100">
                             Submit
@@ -153,12 +156,12 @@ const Footer = () => (
                 <p>✉️ <a href="#" style={{ textDecoration: "none" }}>fptudn@fpt.edu.vn</a></p>
             </div>
             <div className="d-flex gap-3 mt-3 mt-md-0 text-white">
-                <a href="#" className="text-white fs-4">G+</a>
-                <a href="#" className="text-white fs-4">f</a>
-                <a href="#" className="text-white fs-4">in</a>
-                <a href="#" className="text-white fs-4">🐦</a>
-                <a href="#" className="text-white fs-4">📺</a>
-                <a href="#" className="text-white fs-4">✉</a>
+                <a href="#" className="text-white fs-4 text-decoration-none">G+</a>
+                <a href="#" className="text-white fs-4 text-decoration-none">f</a>
+                <a href="#" className="text-white fs-4 text-decoration-none">in</a>
+                <a href="#" className="text-white fs-4 text-decoration-none">🐦</a>
+                <a href="#" className="text-white fs-4 text-decoration-none">📺</a>
+                <a href="#" className="text-white fs-4 text-decoration-none">✉</a>
             </div>
         </div>
         <div className="text-center mt-3 text-dark">© Copyright 2023</div>
@@ -189,7 +192,7 @@ const Exercise5 = () => {
                         backgroundColor: "#a6a6a6",
                         padding: "10px",
                         textAlign: "center",
-                        marginRight:"88%",
+                        marginRight: "88%",
                         borderRadius: "8px",
                     }}
                 >
