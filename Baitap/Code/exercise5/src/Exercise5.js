@@ -40,7 +40,7 @@ const StudentCard = ({ student, onStatusChange }) => {
                     src={student.img}
                     className="card-img-top img-fluid object-fit-cover"
                     alt={student.name}
-                    style={{ height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+                    style={{ height: '100%'}}
                 />
                 <div className="card-body">
                     <h5 className="card-title text-center">{student.id}</h5>
@@ -50,7 +50,7 @@ const StudentCard = ({ student, onStatusChange }) => {
                     </div>
                     <form onSubmit={handleSubmit}>
                         <div className="d-flex justify-content-between mb-2">
-                            <div className="form-check me-3">
+                            <div className="form-check">
                                 <input
                                     className="form-check-input"
                                     type="radio"
