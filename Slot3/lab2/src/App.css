@@ -1,0 +1,34 @@
+.hero-slide {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+
+.hero-caption {
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  font-size: 2.5rem;
+  margin-top: 200px; /* Giữ hoặc điều chỉnh theo ý muốn */
+}
+
+.hero-desc {
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-top: 0px; /* Giảm xuống để gần với caption */
+}
+
+.menu-section {
+  background-color: #000; /* black background */
+}
+
+.menu-section .card {
+  background-color: #fff; /* white background inside cards */
+  color: #000;
+}
+
+.menu-section .card .card-text s {
+  font-weight: bold;
+}
