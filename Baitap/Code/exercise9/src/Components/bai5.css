@@ -1,0 +1,22 @@
+.custom-header {
+    background-color: #e27d1f;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 30rem;
+    height: 15rem;
+    margin-bottom: 10px;
+  }
+  
+  .custom-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .custom-footer {
+    background-color: #f4c777;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
