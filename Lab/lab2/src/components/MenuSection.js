@@ -20,7 +20,7 @@ function MenuSection() {
                                 <div className="card-body">
                                     <h5 className="card-title">{item.title}</h5>
                                     <p className="card-text">
-                                        {item.oldPrice && <s className="text-muted me-2">${item.oldPrice}</s>}  {/*giá tiền ở đây*/}
+                                        {item.oldPrice && <s className="text-muted me-2">${item.oldPrice}</s>}
                                         <strong className={item.oldPrice ? 'text-warning' : ''}>${item.price}</strong>
                                     </p>
                                     <button className="btn btn-dark w-100">Buy</button>

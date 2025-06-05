@@ -25,7 +25,7 @@ function BookingForm() {
                     <div className="mb-3">
                         <textarea className="form-control" rows="4" placeholder="Please write your comment"></textarea>
                     </div>
-                    <div >
+                    <div>
                         <button className="btn btn-warning px-4">Send Message</button>
                     </div>
                 </form>
