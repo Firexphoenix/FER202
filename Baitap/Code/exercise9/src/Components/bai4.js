@@ -2,11 +2,10 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Container, Row, Col } from "react-bootstrap";
 
-// SimpleCard Component
 const SimpleCard = ({ item }) => {
     const { title, description, imageUrl } = item;
     return (
-        <Card className="border-black" style={{ width: "50rem", border: "1px solid", padding: "10px", boxShadow:"0.5px 0.5px" }}>
+        <Card className="border-black" style={{ width: "50rem", border: "1px solid", padding: "10px", boxShadow: "0.5px 0.5px" }}>
             <Container fluid>
                 <Row>
                     <Col
@@ -20,8 +19,16 @@ const SimpleCard = ({ item }) => {
                         )}
                     </Col>
                     <Col xs={9} className="p-2">
-                        <h1 className="text-lg fw-bold" style={{paddingLeft:"10px"}}>{title}</h1>
-                        <p className="text-muted mt-1 small"style={{paddingLeft:"10px"}}>{description}</p>
+                        <Row>
+                            {/* Cột thứ nhất */}
+                            <Col xs={12}>
+                                <h1 className="text-lg fw-bold">{title}</h1>
+                            </Col>
+                            {/* Cột thứ hai */}
+                            <Col xs={12}>
+                                <p className="text-muted mt-1 small">{description}</p>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
@@ -29,7 +36,6 @@ const SimpleCard = ({ item }) => {
     );
 };
 
-// Example Usage
 const Bai4 = () => {
     const cardData = {
         title: "Hoai Nguyen - FPT DaNang",
