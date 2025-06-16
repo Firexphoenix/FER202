@@ -6,6 +6,8 @@ import TodoList from './components/Exercise4';
 import ColorSwitcher from './components/Exercise5';
 import SearchFilter from './components/Exercise6';
 import DragAndDropList from './components/Exercise7';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
