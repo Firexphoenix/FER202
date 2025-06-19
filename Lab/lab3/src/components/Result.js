@@ -5,7 +5,6 @@ function Result({ score, total, onReplay, answers }) {
         <div>
             <h2>Quiz Complete!</h2>
             <p>Your Score: {score} / {total}</p>
-
             <h3>Correct Answers:</h3>
             <ul>
                 {answers.map((q, idx) => (
@@ -15,7 +14,6 @@ function Result({ score, total, onReplay, answers }) {
                     </li>
                 ))}
             </ul>
-
             <button onClick={onReplay}>Play Again</button>
         </div>
     );
