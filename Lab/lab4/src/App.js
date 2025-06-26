@@ -14,6 +14,15 @@ function App() {
       ],
       correctAnswer: 'A JavaScript library for building user interfaces',
     },
+    {
+      question: '1+1=?',
+      answers: [
+        '1',
+        '2',
+        '3',
+      ],
+      correctAnswer: '2'
+    },
   ]);
 
   const [started, setStarted] = useState(false);
