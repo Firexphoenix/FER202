@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Container, Button } from 'react-bootstrap';
 import Question from './Question';
-import { Button } from 'react-bootstrap';
 
 function Quiz() {
     const questions = [
@@ -42,8 +42,8 @@ function Quiz() {
     };
 
     return (
-        <div className="quiz-container">
-            <h1>Quiz</h1>
+        <Container className="quiz-container mt-5 mb-5">
+            <h1 className="text-center mb-4">Quiz</h1>
             {questions.map((question) => (
                 <Question
                     key={question.id}
@@ -52,17 +52,19 @@ function Quiz() {
                     onAnswer={handleAnswer}
                 />
             ))}
-            <Button variant="primary" onClick={calculateScore}>
-                Submit Quiz
-            </Button>
+            <div className="text-center mt-4">
+                <Button variant="primary" onClick={calculateScore} className="quiz-submit-btn">
+                    Submit Quiz
+                </Button>
+            </div>
             {score !== null && (
-                <div className="mt-3">
-                    <h4>
+                <div className="quiz-score mt-4 text-center">
+                    <h4 className="text-success">
                         Your Score: {score} / {questions.length}
                     </h4>
                 </div>
             )}
-        </div>
+        </Container>
     );
 }
 

@@ -1,39 +1,61 @@
-import Slider from 'react-slick';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Carousel, Image, Container, Row, Col } from 'react-bootstrap';
+import slideImg1 from '../images/banner.jpg';
+import slideImg2 from '../images/banner2.jpg';
+import slideImg3 from '../images/banner3.jpg';
+import pic1 from '../images/menu-01.jpg';
+import pic2 from '../images/menu-02.jpg';
+import pic3 from '../images/menu-03.jpg';
+import pic4 from '../images/menu-04.jpg';
+import pic5 from '../images/menu-05.jpg';
+import pic6 from '../images/menu-06.jpg';
 
-function Home() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-    };
-
-    const slides = [
-        { id: 1, image: 'images/banner.png', alt: 'Slide 1' },
-        { id: 2, image: 'images/banner2.jpg', alt: 'Slide 2' },
-        { id: 3, image: 'images/banner3.jpg', alt: 'Slide 3' },
-    ];
-
+const Home = () => {
     return (
-        <div className="HomePage">
-            <div className="slider">
-                <Slider {...settings}>
-                    {slides.map((slide) => (
-                        <div key={slide.id}>
-                            <img src={slide.image} alt={slide.alt} />
-                        </div>
-                    ))}
-                </Slider>
-
-            </div>
-            <br />
-            <h4>
-                This is Home Page
-            </h4>
+        <div>
+            <Carousel id="carouselExampleCaptions" className="mt-1" variant="light" interval={2000}>
+                <Carousel.Item>
+                    <Image src={slideImg1} className="d-block w-100" alt="First slide" />
+                    <Carousel.Caption>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src={slideImg2} className="d-block w-100" alt="First slide" />
+                    <Carousel.Caption>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src={slideImg3} className="d-block w-100" alt="First slide" />
+                    <Carousel.Caption>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+            <Container className='mt-3'>
+                <Row>
+                    <Col>
+                        <Image src={pic1} roundedCircle />
+                    </Col>
+                    <Col>
+                        <Image src={pic2} roundedCircle />
+                    </Col>
+                    <Col>
+                        <Image src={pic3} roundedCircle />
+                    </Col>
+                    <Col>
+                        <Image src={pic4} roundedCircle />
+                    </Col>
+                    <Col>
+                        <Image src={pic5} roundedCircle />
+                    </Col>
+                    <Col>
+                        <Image src={pic6} roundedCircle />
+                    </Col>
+                </Row>
+                <h2 className='text-danger mt-3'>This is home page</h2>
+            </Container>
         </div>
     );
 }

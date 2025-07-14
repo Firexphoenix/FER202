@@ -1,0 +1,158 @@
+{
+  "Laptops": [
+    {
+      "id": 1,
+      "brand": "Dell",
+      "model": "XPS 13",
+      "year": 2023,
+      "price": "$999",
+      "image": "/images/dell-xps13.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Apple",
+      "model": "MacBook Pro",
+      "year": 2022,
+      "price": "$2500",
+      "image": "/images/macbook-pro.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "HP",
+      "model": "Spectre x360",
+      "year": 2021,
+      "price": "$1800",
+      "image": "/images/hp-spectre.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Lenovo",
+      "model": "ThinkPad X1",
+      "year": 2020,
+      "price": "$1600",
+      "image": "/images/lenovo-thinkpad.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "Asus",
+      "model": "ZenBook 14",
+      "year": 2023,
+      "price": "$1100",
+      "image": "/images/asus-zenbook.jpg"
+    },
+    {
+      "id": 6,
+      "brand": "Acer",
+      "model": "Swift 3",
+      "year": 2021,
+      "price": "$850",
+      "image": "/images/acer-swift3.jpg"
+    },
+    {
+      "id": 7,
+      "brand": "Microsoft",
+      "model": "Surface Laptop 5",
+      "year": 2023,
+      "price": "$1200",
+      "image": "/images/surface-laptop.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "Razer",
+      "model": "Blade 15",
+      "year": 2022,
+      "price": "$2200",
+      "image": "/images/razer-blade.jpg"
+    },
+    {
+      "id": 9,
+      "brand": "MSI",
+      "model": "Prestige 14",
+      "year": 2022,
+      "price": "$1350",
+      "image": "/images/msi-prestige.jpg"
+    },
+    {
+      "id": 10,
+      "brand": "Samsung",
+      "model": "Galaxy Book Pro",
+      "year": 2021,
+      "price": "$999",
+      "image": "/images/samsung-galaxybook.jpg"
+    },
+    {
+      "id": 11,
+      "brand": "LG",
+      "model": "Gram 17",
+      "year": 2023,
+      "price": "$1799",
+      "image": "/images/lg-gram17.jpg"
+    },
+    {
+      "id": 12,
+      "brand": "Huawei",
+      "model": "MateBook X Pro",
+      "year": 2022,
+      "price": "$1599",
+      "image": "/images/huawei-matebook.jpg"
+    }
+  ],
+  "UserAccounts": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "1234567",
+      "account_type": "admin",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "username": "jane",
+      "password": "1234567",
+      "account_type": "user",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "username": "alice",
+      "password": "1234567",
+      "account_type": "user",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "username": "bob",
+      "password": "1234567",
+      "account_type": "guest",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "username": "john",
+      "password": "john123",
+      "account_type": "user",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "username": "emma",
+      "password": "emma456",
+      "account_type": "user",
+      "status": "inactive"
+    },
+    {
+      "id": 7,
+      "username": "charlie",
+      "password": "charlie789",
+      "account_type": "guest",
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "username": "oliver",
+      "password": "oliver007",
+      "account_type": "user",
+      "status": "active"
+    }
+  ]
+}

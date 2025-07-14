@@ -94,7 +94,7 @@ function Contact() {
                                 isInvalid={!!errors.firstName}
                                 isValid={formData.firstName && !errors.firstName}
                             />
-                            <Form.Control.Feedback type="invalid">{errors.firstName || 'Looks good!'}</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">{errors.firstName || ''}</Form.Control.Feedback>
                         </Form.Group>
                     </div>
                     <div className="col-md-4">
@@ -108,7 +108,7 @@ function Contact() {
                                 isInvalid={!!errors.lastName}
                                 isValid={formData.lastName && !errors.lastName}
                             />
-                            <Form.Control.Feedback type="invalid">{errors.lastName || 'Looks good!'}</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">{errors.lastName || ''}</Form.Control.Feedback>
                         </Form.Group>
                     </div>
                     <div className="col-md-4">
@@ -124,7 +124,7 @@ function Contact() {
                                     isValid={formData.username && !errors.username}
                                 />
                             </div>
-                            <Form.Control.Feedback type="invalid">{errors.username || 'Looks good!'}</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">{errors.username || ''}</Form.Control.Feedback>
                         </Form.Group>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ function Contact() {
                                 isInvalid={!!errors.city}
                                 isValid={formData.city && !errors.city}
                             />
-                            <Form.Control.Feedback type="invalid">{errors.city || 'Looks good!'}</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">{errors.city || ''}</Form.Control.Feedback>
                         </Form.Group>
                     </div>
                     <div className="col-md-4">
@@ -154,7 +154,7 @@ function Contact() {
                                 isInvalid={!!errors.state}
                                 isValid={formData.state && !errors.state}
                             />
-                            <Form.Control.Feedback type="invalid">{errors.state || 'Looks good!'}</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">{errors.state || ''}</Form.Control.Feedback>
                         </Form.Group>
                     </div>
                     <div className="col-md-4">
@@ -168,7 +168,7 @@ function Contact() {
                                 isInvalid={!!errors.zip}
                                 isValid={formData.zip && !errors.zip}
                             />
-                            <Form.Control.Feedback type="invalid">{errors.zip || 'Looks good!'}</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">{errors.zip || ''}</Form.Control.Feedback>
                         </Form.Group>
                     </div>
                 </div>
