@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
-import LaptopList from './components/LaptopList';
-import LaptopDetail from './components/LaptopDetail';
 import { Navbar, Container, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import MotobikesList from './components/MotorBikeManagement';
+import { MotorbikesProvider } from './context/MotorbikeContext';
+import MotobikesDetail from './components/MotorbikesDetails';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -31,7 +33,7 @@ function AppLayout({ user, setUser }) {
       {user && (
         <Navbar bg="light" className="mb-3">
           <Container className="d-flex justify-content-between">
-            <Navbar.Brand>Laptop Manager</Navbar.Brand>
+            <Navbar.Brand>Motobikes Manager</Navbar.Brand>
             <div>
               <span className="me-3">👋 Hello, {user.username}</span>
               <Button variant="outline-danger" onClick={handleLogout}>Logout</Button>
@@ -40,19 +42,20 @@ function AppLayout({ user, setUser }) {
         </Navbar>
       )}
 
-      {/* Các route */}
-      <Routes>
-        <Route path="/" element={<LoginPage setUser={setUser} />} />
-        <Route
-          path="/laptops"
-          element={user ? <LaptopList user={user} /> : <Navigate to="/" />}
-        />
-        <Route
-          path="/laptops/:id"
-          element={user ? <LaptopDetail /> : <Navigate to="/" />}
-        />
-        <Route path="*" element={<h1 className="text-center mt-5">404 Page Not Found</h1>} />
-      </Routes>
+      <MotorbikesProvider>
+        <Routes>
+          <Route path="/" element={<LoginPage setUser={setUser} />} />
+          <Route
+            path="/motorbikes"
+            element={user ? <MotobikesList user={user} /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/view/:id"
+            element={user ? <MotobikesDetail /> : <Navigate to="/" />}
+          />
+        </Routes>
+      </MotorbikesProvider>
+
     </>
   );
 }

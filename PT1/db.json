@@ -1,157 +1,73 @@
 {
-  "Laptops": [
+  "Motorbikes": [
     {
       "id": 1,
-      "brand": "Dell",
-      "model": "XPS 13",
-      "year": 2023,
-      "price": "$999",
-      "image": "/images/dell-xps13.jpg"
+      "brand": "Honda",
+      "model": "Winner X",
+      "year": 2022,
+      "price": "$1500",
+      "image": "/images/winnerx.jpg",
+      "description": "A sporty underbone motorbike with aggressive design and powerful engine.",
+      "stock": 10
     },
     {
       "id": 2,
-      "brand": "Apple",
-      "model": "MacBook Pro",
-      "year": 2022,
-      "price": "$2500",
-      "image": "/images/macbook-pro.jpg"
+      "brand": "Yamaha",
+      "model": "Exciter 155",
+      "year": 2023,
+      "price": "$1700",
+      "image": "/images/exciter155.jpg",
+      "description": "A performance-focused motorbike suitable for daily use and racing enthusiasts.",
+      "stock": 8
     },
     {
       "id": 3,
-      "brand": "HP",
-      "model": "Spectre x360",
+      "brand": "Suzuki",
+      "model": "Raider R150",
       "year": 2021,
-      "price": "$1800",
-      "image": "/images/hp-spectre.jpg"
+      "price": "$1400",
+      "image": "/images/raider.jpg",
+      "description": "A lightweight and agile motorbike ideal for city commuting.",
+      "stock": 12
     },
     {
       "id": 4,
-      "brand": "Lenovo",
-      "model": "ThinkPad X1",
+      "brand": "Piaggio",
+      "model": "Liberty ABS",
       "year": 2020,
-      "price": "$1600",
-      "image": "/images/lenovo-thinkpad.jpg"
-    },
-    {
-      "id": 5,
-      "brand": "Asus",
-      "model": "ZenBook 14",
-      "year": 2023,
-      "price": "$1100",
-      "image": "/images/asus-zenbook.jpg"
-    },
-    {
-      "id": 6,
-      "brand": "Acer",
-      "model": "Swift 3",
-      "year": 2021,
-      "price": "$850",
-      "image": "/images/acer-swift3.jpg"
-    },
-    {
-      "id": 7,
-      "brand": "Microsoft",
-      "model": "Surface Laptop 5",
-      "year": 2023,
-      "price": "$1200",
-      "image": "/images/surface-laptop.jpg"
-    },
-    {
-      "id": 8,
-      "brand": "Razer",
-      "model": "Blade 15",
-      "year": 2022,
-      "price": "$2200",
-      "image": "/images/razer-blade.jpg"
-    },
-    {
-      "id": 9,
-      "brand": "MSI",
-      "model": "Prestige 14",
-      "year": 2022,
-      "price": "$1350",
-      "image": "/images/msi-prestige.jpg"
-    },
-    {
-      "id": 10,
-      "brand": "Samsung",
-      "model": "Galaxy Book Pro",
-      "year": 2021,
-      "price": "$999",
-      "image": "/images/samsung-galaxybook.jpg"
-    },
-    {
-      "id": 11,
-      "brand": "LG",
-      "model": "Gram 17",
-      "year": 2023,
-      "price": "$1799",
-      "image": "/images/lg-gram17.jpg"
-    },
-    {
-      "id": 12,
-      "brand": "Huawei",
-      "model": "MateBook X Pro",
-      "year": 2022,
-      "price": "$1599",
-      "image": "/images/huawei-matebook.jpg"
+      "price": "$1800",
+      "image": "/images/liberty.jpg",
+      "description": "A premium scooter with stylish European design and ABS braking system.",
+      "stock": 5
     }
   ],
   "UserAccounts": [
     {
       "id": 1,
       "username": "admin",
-      "password": "1234567",
+      "password": "admin123",
       "account_type": "admin",
       "status": "active"
     },
     {
       "id": 2,
-      "username": "jane",
-      "password": "1234567",
+      "username": "john",
+      "password": "johnpass",
       "account_type": "user",
-      "status": "inactive"
+      "status": "active"
     },
     {
       "id": 3,
-      "username": "alice",
-      "password": "1234567",
-      "account_type": "user",
-      "status": "active"
-    },
-    {
-      "id": 4,
-      "username": "bob",
-      "password": "1234567",
-      "account_type": "guest",
-      "status": "active"
-    },
-    {
-      "id": 5,
-      "username": "john",
-      "password": "john123",
-      "account_type": "user",
-      "status": "active"
-    },
-    {
-      "id": 6,
-      "username": "emma",
-      "password": "emma456",
+      "username": "jane",
+      "password": "janepass",
       "account_type": "user",
       "status": "inactive"
     },
     {
-      "id": 7,
-      "username": "charlie",
-      "password": "charlie789",
+      "id": 4,
+      "username": "guest",
+      "password": "guestpass",
       "account_type": "guest",
-      "status": "active"
-    },
-    {
-      "id": 8,
-      "username": "oliver",
-      "password": "oliver007",
-      "account_type": "user",
       "status": "active"
     }
   ]
